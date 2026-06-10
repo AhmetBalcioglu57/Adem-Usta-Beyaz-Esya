@@ -1,447 +1,1632 @@
-<!DOCTYPE html>
 
-<html class="scroll-smooth" lang="tr"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Bağcılar Teknik - Beyaz Eşya Servisi</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "background": "#f7f9fb",
-                    "outline": "#76777d",
-                    "surface-container-high": "#e6e8ea",
-                    "tertiary": "#000000",
-                    "inverse-primary": "#bec6e0",
-                    "on-secondary-container": "#54647a",
-                    "on-secondary-fixed-variant": "#38485d",
-                    "secondary-container": "#d0e1fb",
-                    "surface-bright": "#f7f9fb",
-                    "on-secondary-fixed": "#0b1c30",
-                    "surface-container-highest": "#e0e3e5",
-                    "on-surface": "#191c1e",
-                    "primary-fixed": "#dae2fd",
-                    "on-tertiary-fixed": "#341100",
-                    "on-primary-container": "#7c839b",
-                    "secondary": "#505f76",
-                    "primary-container": "#131b2e",
-                    "secondary-fixed": "#d3e4fe",
-                    "primary-fixed-dim": "#bec6e0",
-                    "error-container": "#ffdad6",
-                    "on-background": "#191c1e",
-                    "surface-container": "#eceef0",
-                    "tertiary-fixed-dim": "#ffb690",
-                    "secondary-fixed-dim": "#b7c8e1",
-                    "on-surface-variant": "#45464d",
-                    "error": "#ba1a1a",
-                    "on-error-container": "#93000a",
-                    "surface-tint": "#565e74",
-                    "on-tertiary": "#ffffff",
-                    "surface-variant": "#e0e3e5",
-                    "tertiary-fixed": "#ffdbca",
-                    "on-primary": "#ffffff",
-                    "surface-dim": "#d8dadc",
-                    "surface-container-low": "#f2f4f6",
-                    "tertiary-container": "#341100",
-                    "primary": "#000000",
-                    "outline-variant": "#c6c6cd",
-                    "on-primary-fixed-variant": "#3f465c",
-                    "on-error": "#ffffff",
-                    "on-tertiary-container": "#d95f00",
-                    "surface": "#f7f9fb",
-                    "on-tertiary-fixed-variant": "#783200",
-                    "on-primary-fixed": "#131b2e",
-                    "on-secondary": "#ffffff",
-                    "surface-container-lowest": "#ffffff",
-                    "inverse-surface": "#2d3133",
-                    "inverse-on-surface": "#eff1f3",
-                    "brand-orange": "#d95f00",
-                    "brand-blue": "#131b2e"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "section-padding": "5rem",
-                    "stack-lg": "2rem",
-                    "stack-md": "1rem",
-                    "container-max": "1200px",
-                    "stack-sm": "0.5rem",
-                    "gutter": "1.5rem"
-            },
-            "fontFamily": {
-                    "body-lg": ["Inter"],
-                    "h2": ["Inter"],
-                    "label-sm": ["Inter"],
-                    "body-md": ["Inter"],
-                    "h3": ["Inter"],
-                    "h1": ["Inter"]
-            },
-            "fontSize": {
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "h2": ["36px", {"lineHeight": "1.3", "fontWeight": "700"}],
-                    "label-sm": ["14px", {"lineHeight": "1", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
-                    "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+<!doctype html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0b3d91" />
+
+        <title>Bağcılar Beyaz Eşya Servisi | 7/24 Tamir & Bakım - 0530 215 7944</title>
+        <meta
+            name="description"
+            content="Bağcılar beyaz eşya teknik servisi. Arçelik, Beko, Bosch, Siemens, Samsung, LG, Profilo, Vestel tamiri. Aynı gün yerinde servis, 1 yıl garanti. Hemen arayın: 0530 215 7944"
+        />
+        <meta
+            name="keywords"
+            content="Bağcılar beyaz eşya servisi, Bağcılar Arçelik tamircisi, Bağcılar buzdolabı tamiri, Bağcılar çamaşır makinesi servisi, Güneşli beyaz eşya servisi, Kirazlı buzdolabı tamiri, Bağcılar bulaşık makinesi tamiri, Beko servisi Bağcılar"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Bağcılar Beyaz Eşya Teknik Servisi" />
+        <meta name="geo.region" content="TR-34" />
+        <meta name="geo.placename" content="Bağcılar, İstanbul" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta
+            property="og:title"
+            content="Bağcılar Beyaz Eşya Servisi | 7/24 Hızlı ve Garantili"
+        />
+        <meta
+            property="og:description"
+            content="Bağcılar ve tüm mahallelerinde aynı gün yerinde beyaz eşya tamiri. 1 yıl garanti, orijinal yedek parça. Hemen arayın: 0530 215 7944"
+        />
+
+        <link rel="canonical" href="/" />
+
+        <!-- Bootstrap 5 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            :root {
+                --brand-blue: #0b3d91;
+                --brand-blue-dark: #082a66;
+                --brand-blue-light: #1a56d1;
+                --cta-orange: #ff7a00;
+                --cta-orange-dark: #e56500;
+                --ink: #0f172a;
+                --muted: #475569;
+                --soft: #f4f7fb;
             }
-          },
-        },
-      }
-    </script>
-<style>
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-100px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes slideInRight {
-            from { opacity: 0; transform: translateX(100px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(1deg); }
-        }
-        @keyframes pulse-custom {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(217, 95, 0, 0.4); }
-            50% { transform: scale(1.05); box-shadow: 0 0 20px 10px rgba(217, 95, 0, 0); }
-        }
-        @keyframes bgMove {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        @keyframes reveal {
-            from { opacity: 0; transform: scale(0.9) translateY(30px); }
-            to { opacity: 1; transform: scale(1) translateY(0); }
-        }
+            * {
+                -webkit-font-smoothing: antialiased;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                font-family:
+                    "Manrope", system-ui, -apple-system, "Segoe UI",
+                    sans-serif;
+                color: var(--ink);
+                background: #ffffff;
+                padding-top: 72px;
+            }
+            a {
+                text-decoration: none;
+            }
 
-        .animate-fade-in-up { animation: fadeInUp 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
-        .animate-slide-in-left { animation: slideInLeft 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
-        .animate-slide-in-right { animation: slideInRight 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
-        .animate-float { animation: float 6s ease-in-out infinite; }
-        .animate-pulse-btn { animation: pulse-custom 2s infinite; }
-        
-        .reveal-on-scroll {
-            view-timeline-name: --reveal;
-            view-timeline-axis: block;
-            animation-timeline: --reveal;
-            animation-name: reveal;
-            animation-range: entry 10% cover 30%;
-            animation-fill-mode: both;
-        }
+            /* Top contact bar */
+            .topbar {
+                background: var(--brand-blue-dark);
+                color: #fff;
+                font-size: 0.85rem;
+                padding: 6px 0;
+            }
+            .topbar a {
+                color: #fff;
+                opacity: 0.95;
+            }
+            .topbar a:hover {
+                opacity: 1;
+            }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-        .service-hover:hover {
-            transform: scale(1.08) rotate(2deg);
-            z-index: 10;
-        }
-        .service-hover:hover .icon-animate {
-            transform: scale(1.3) rotate(15deg);
-            color: #d95f00;
-        }
-        .brand-logo {
-            filter: grayscale(100%);
-            opacity: 0.5;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        .brand-logo:hover {
-            filter: grayscale(0%);
-            opacity: 1;
-            transform: translateY(-8px) scale(1.15);
-        }
-        .area-tag {
-            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-        .area-tag:hover {
-            transform: scale(1.1) translateY(-5px);
-            background-color: #d95f00;
-            color: white;
-            border-color: #d95f00;
-        }
+            /* Header */
+            .site-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: #fff;
+                border-bottom: 1px solid #e6eaf2;
+                z-index: 1030;
+                box-shadow: 0 2px 18px rgba(11, 61, 145, 0.06);
+            }
+            .brand-mark {
+                width: 44px;
+                height: 44px;
+                border-radius: 12px;
+                background: linear-gradient(
+                    135deg,
+                    var(--brand-blue) 0%,
+                    var(--brand-blue-light) 100%
+                );
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 1.4rem;
+            }
+            .brand-title {
+                font-weight: 800;
+                color: var(--ink);
+                font-size: 1.05rem;
+                line-height: 1.1;
+            }
+            .brand-sub {
+                color: var(--muted);
+                font-size: 0.78rem;
+            }
 
-        .bg-parallax {
-            background-size: 200% 200%;
-            animation: bgMove 15s ease infinite;
-        }
-    </style>
+            /* Buttons */
+            .btn-cta {
+                background: var(--cta-orange);
+                color: #fff;
+                font-weight: 700;
+                border: 0;
+                border-radius: 999px;
+                padding: 12px 22px;
+                box-shadow: 0 10px 24px rgba(255, 122, 0, 0.32);
+                transition:
+                    transform 0.18s ease,
+                    box-shadow 0.18s ease,
+                    background 0.18s ease;
+            }
+            .btn-cta:hover {
+                background: var(--cta-orange-dark);
+                color: #fff;
+                transform: translateY(-2px);
+                box-shadow: 0 14px 28px rgba(255, 122, 0, 0.4);
+            }
+            .btn-outline-light-blue {
+                background: transparent;
+                color: #fff;
+                border: 2px solid rgba(255, 255, 255, 0.7);
+                font-weight: 700;
+                border-radius: 999px;
+                padding: 11px 20px;
+                transition: all 0.18s ease;
+            }
+            .btn-outline-light-blue:hover {
+                background: #fff;
+                color: var(--brand-blue);
+            }
+            .btn-whatsapp {
+                background: #25d366;
+                color: #fff;
+                font-weight: 700;
+                border-radius: 999px;
+                padding: 12px 22px;
+                border: 0;
+                box-shadow: 0 10px 24px rgba(37, 211, 102, 0.3);
+                transition: all 0.18s ease;
+            }
+            .btn-whatsapp:hover {
+                background: #1fb955;
+                color: #fff;
+                transform: translateY(-2px);
+            }
+
+            /* Hero */
+            .hero {
+                position: relative;
+                background:
+                    radial-gradient(
+                        1200px 500px at 90% -10%,
+                        rgba(26, 86, 209, 0.35),
+                        transparent 60%
+                    ),
+                    linear-gradient(
+                        135deg,
+                        var(--brand-blue) 0%,
+                        var(--brand-blue-dark) 100%
+                    );
+                color: #fff;
+                overflow: hidden;
+                padding: 64px 0 72px;
+            }
+            .hero::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background-image:
+                    radial-gradient(
+                        rgba(255, 255, 255, 0.07) 1px,
+                        transparent 1px
+                    );
+                background-size: 22px 22px;
+                pointer-events: none;
+                mask-image: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 1),
+                    rgba(0, 0, 0, 0.2)
+                );
+            }
+            .hero .badge-pill {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 6px 14px;
+                border-radius: 999px;
+                font-size: 0.85rem;
+                font-weight: 600;
+            }
+            .hero h1 {
+                font-weight: 800;
+                font-size: clamp(2rem, 4.2vw, 3.25rem);
+                line-height: 1.12;
+                margin-top: 18px;
+                letter-spacing: -0.02em;
+            }
+            .hero .lead {
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 1.1rem;
+                margin-top: 16px;
+                max-width: 640px;
+            }
+            .hero-stats {
+                display: flex;
+                gap: 28px;
+                flex-wrap: wrap;
+                margin-top: 32px;
+            }
+            .hero-stat strong {
+                display: block;
+                font-size: 1.6rem;
+                font-weight: 800;
+            }
+            .hero-stat span {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 0.9rem;
+            }
+            .hero-card {
+                background: rgba(255, 255, 255, 0.08);
+                backdrop-filter: blur(14px);
+                -webkit-backdrop-filter: blur(14px);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                border-radius: 22px;
+                padding: 28px;
+                color: #fff;
+            }
+            .hero-card .tick {
+                color: #ffb347;
+            }
+
+            /* Section base */
+            section.section {
+                padding: 80px 0;
+            }
+            .eyebrow {
+                display: inline-block;
+                font-weight: 700;
+                color: var(--brand-blue);
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                font-size: 0.78rem;
+                background: rgba(11, 61, 145, 0.08);
+                padding: 6px 12px;
+                border-radius: 999px;
+            }
+            h2.section-title {
+                font-weight: 800;
+                font-size: clamp(1.7rem, 3vw, 2.4rem);
+                letter-spacing: -0.02em;
+                margin-top: 14px;
+            }
+            .section-sub {
+                color: var(--muted);
+                max-width: 720px;
+                margin-top: 10px;
+            }
+
+            /* Service cards */
+            .svc-card {
+                background: #fff;
+                border: 1px solid #e8edf5;
+                border-radius: 18px;
+                padding: 28px;
+                height: 100%;
+                transition:
+                    transform 0.2s ease,
+                    box-shadow 0.2s ease,
+                    border-color 0.2s ease;
+                position: relative;
+            }
+            .svc-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 18px 40px rgba(11, 61, 145, 0.1);
+                border-color: rgba(11, 61, 145, 0.25);
+            }
+            .svc-icon {
+                width: 56px;
+                height: 56px;
+                border-radius: 14px;
+                background: linear-gradient(
+                    135deg,
+                    rgba(11, 61, 145, 0.08),
+                    rgba(26, 86, 209, 0.14)
+                );
+                color: var(--brand-blue);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.6rem;
+                margin-bottom: 14px;
+            }
+            .svc-card h3 {
+                font-weight: 800;
+                font-size: 1.15rem;
+                margin-bottom: 8px;
+            }
+            .svc-card p {
+                color: var(--muted);
+                font-size: 0.94rem;
+                margin-bottom: 16px;
+            }
+            .svc-card a.call-link {
+                color: var(--cta-orange);
+                font-weight: 700;
+            }
+
+            /* Brands */
+            .brand-card {
+                background: #fff;
+                border: 1px solid #e8edf5;
+                border-radius: 14px;
+                padding: 18px 12px;
+                text-align: center;
+                font-weight: 700;
+                color: var(--brand-blue);
+                letter-spacing: 0.02em;
+                transition: all 0.18s ease;
+            }
+            .brand-card:hover {
+                transform: translateY(-3px);
+                border-color: var(--brand-blue-light);
+                box-shadow: 0 12px 22px rgba(11, 61, 145, 0.08);
+                color: var(--brand-blue-dark);
+            }
+            .brand-card .tick {
+                color: var(--cta-orange);
+                font-size: 0.85rem;
+                display: block;
+                margin-top: 4px;
+                font-weight: 600;
+            }
+
+            /* Regions */
+            .region-section {
+                background: var(--soft);
+            }
+            .region-chip {
+                background: #fff;
+                border: 1px solid #e2e8f5;
+                border-radius: 12px;
+                padding: 14px 16px;
+                font-weight: 600;
+                color: var(--ink);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                transition: all 0.18s ease;
+            }
+            .region-chip i {
+                color: var(--cta-orange);
+            }
+            .region-chip:hover {
+                border-color: var(--brand-blue-light);
+                color: var(--brand-blue);
+                transform: translateY(-2px);
+                box-shadow: 0 10px 18px rgba(11, 61, 145, 0.06);
+            }
+
+            /* Why us */
+            .why-card {
+                background: #fff;
+                border-left: 4px solid var(--cta-orange);
+                border-radius: 12px;
+                padding: 22px 22px 22px 22px;
+                box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+                height: 100%;
+            }
+            .why-card .icon {
+                width: 48px;
+                height: 48px;
+                background: rgba(255, 122, 0, 0.12);
+                color: var(--cta-orange);
+                border-radius: 12px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4rem;
+                margin-bottom: 12px;
+            }
+            .why-card h3 {
+                font-weight: 800;
+                font-size: 1.05rem;
+                margin-bottom: 6px;
+            }
+            .why-card p {
+                color: var(--muted);
+                font-size: 0.93rem;
+                margin: 0;
+            }
+
+            /* CTA banner */
+            .cta-banner {
+                background:
+                    radial-gradient(
+                        800px 280px at 0% 0%,
+                        rgba(255, 255, 255, 0.12),
+                        transparent 60%
+                    ),
+                    linear-gradient(
+                        135deg,
+                        var(--cta-orange) 0%,
+                        #ff9533 100%
+                    );
+                color: #fff;
+                border-radius: 24px;
+                padding: 40px;
+            }
+            .cta-banner h3 {
+                font-weight: 800;
+                font-size: 1.75rem;
+                letter-spacing: -0.01em;
+            }
+            .cta-banner .btn-cta-white {
+                background: #fff;
+                color: var(--brand-blue);
+                font-weight: 800;
+                border-radius: 999px;
+                padding: 13px 24px;
+                border: 0;
+                transition: transform 0.18s ease;
+            }
+            .cta-banner .btn-cta-white:hover {
+                transform: translateY(-2px);
+                color: var(--brand-blue-dark);
+            }
+
+            /* Contact / Map */
+            .contact-card {
+                background: #fff;
+                border: 1px solid #e8edf5;
+                border-radius: 18px;
+                padding: 28px;
+            }
+            .contact-row {
+                display: flex;
+                align-items: flex-start;
+                gap: 14px;
+                padding: 12px 0;
+                border-bottom: 1px dashed #e8edf5;
+            }
+            .contact-row:last-child {
+                border-bottom: 0;
+            }
+            .contact-row .ic {
+                width: 42px;
+                height: 42px;
+                border-radius: 12px;
+                background: rgba(11, 61, 145, 0.08);
+                color: var(--brand-blue);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .contact-row .label {
+                font-size: 0.8rem;
+                color: var(--muted);
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+            }
+            .contact-row .value,
+            .contact-row .value a {
+                color: var(--ink);
+                font-weight: 700;
+                font-size: 1.05rem;
+            }
+            .map-wrap {
+                border-radius: 18px;
+                overflow: hidden;
+                border: 1px solid #e8edf5;
+                box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+            }
+            .map-wrap iframe {
+                width: 100%;
+                height: 380px;
+                border: 0;
+                display: block;
+            }
+
+            /* Footer */
+            footer.site-footer {
+                background: var(--brand-blue-dark);
+                color: rgba(255, 255, 255, 0.85);
+                padding: 56px 0 24px;
+            }
+            footer.site-footer h4 {
+                color: #fff;
+                font-weight: 800;
+                margin-bottom: 16px;
+                font-size: 1.05rem;
+            }
+            footer.site-footer a {
+                color: rgba(255, 255, 255, 0.78);
+                transition: color 0.15s ease;
+            }
+            footer.site-footer a:hover {
+                color: #fff;
+            }
+            .footer-bottom {
+                border-top: 1px solid rgba(255, 255, 255, 0.12);
+                margin-top: 36px;
+                padding-top: 18px;
+                font-size: 0.85rem;
+                color: rgba(255, 255, 255, 0.65);
+            }
+
+            /* Floating CTA buttons */
+            .fab-stack {
+                position: fixed;
+                right: 18px;
+                bottom: 70px;
+                z-index: 1040;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+            .fab {
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 1.6rem;
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+                border: 0;
+                animation: pulseRing 2.4s ease-out infinite;
+            }
+            .fab.call {
+                background: var(--cta-orange);
+            }
+            .fab.wa {
+                background: #25d366;
+                animation-delay: 0.6s;
+            }
+            .fab:hover {
+                color: #fff;
+                transform: scale(1.05);
+            }
+            @keyframes pulseRing {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.55);
+                }
+                70% {
+                    box-shadow: 0 0 0 18px rgba(255, 122, 0, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(255, 122, 0, 0);
+                }
+            }
+            .fab.wa {
+                animation-name: pulseRingGreen;
+            }
+            @keyframes pulseRingGreen {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+                }
+                70% {
+                    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+                }
+            }
+
+            /* Mobile bottom CTA bar */
+            .mobile-cta {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #fff;
+                box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.12);
+                z-index: 1035;
+                padding: 8px 10px;
+                gap: 8px;
+            }
+            .mobile-cta a {
+                flex: 1;
+                text-align: center;
+                padding: 11px 8px;
+                border-radius: 12px;
+                font-weight: 800;
+                font-size: 0.95rem;
+            }
+            .mobile-cta .mc-call {
+                background: var(--cta-orange);
+                color: #fff;
+            }
+            .mobile-cta .mc-wa {
+                background: #25d366;
+                color: #fff;
+            }
+            @media (max-width: 767.98px) {
+                body {
+                    padding-bottom: 72px;
+                }
+                .mobile-cta {
+                    display: flex;
+                }
+                .topbar {
+                    display: none;
+                }
+                .hero {
+                    padding: 44px 0 56px;
+                }
+                section.section {
+                    padding: 56px 0;
+                }
+                .fab-stack {
+                    display: none;
+                }
+            }
+
+            /* Nav links */
+            .nav-link-custom {
+                color: var(--ink);
+                font-weight: 600;
+                padding: 8px 14px;
+                border-radius: 8px;
+                transition: all 0.15s ease;
+            }
+            .nav-link-custom:hover {
+                color: var(--brand-blue);
+                background: rgba(11, 61, 145, 0.06);
+            }
+
+            /* Hidden React root */
+            #root {
+                display: none;
+            }
+        </style>
+
+        <script>
+            window.addEventListener(
+                "error",
+                function (e) {
+                    if (
+                        e.error instanceof DOMException &&
+                        e.error.name === "DataCloneError" &&
+                        e.message &&
+                        e.message.includes("PerformanceServerTiming")
+                    ) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                    }
+                },
+                true,
+            );
+        </script>
+        <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
+
+        <!-- Local Business Schema -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Bağcılar Beyaz Eşya Teknik Servisi",
+                "image": "",
+                "telephone": ["+905302157944", "+905454033008"],
+                "priceRange": "₺₺",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Barbaros Mahallesi 187. Sokak No: 8 Levent",
+                    "addressLocality": "Bağcılar",
+                    "addressRegion": "İstanbul",
+                    "addressCountry": "TR"
+                },
+                "areaServed": [
+                    "Hürriyet",
+                    "Fevzi Çakmak",
+                    "Göztepe",
+                    "Güneşli",
+                    "Kemalpaşa",
+                    "Kirazlı",
+                    "Yenigün",
+                    "Yıldıztepe",
+                    "Demirkapı",
+                    "Yavuz Selim",
+                    "İnönü",
+                    "Fatih"
+                ],
+                "openingHours": "Mo-Su 08:00-22:00",
+                "description": "Bağcılar bölgesinde Arçelik, Beko, Bosch, Siemens, Samsung, LG, Profilo, Vestel, Regal ve Altus marka beyaz eşyalar için aynı gün yerinde teknik servis."
+            }
+        </script>
+    <script defer src="/static/js/bundle.js"></script><script>
+if(window.self!==window.top){
+  var s=document.createElement("script");s.src="/visual-edit-overlay.js";document.head.appendChild(s);
+  window.tailwind=window.tailwind||{};tailwind.config={corePlugins:{preflight:false}};var t=document.createElement("script");t.src="https://cdn.tailwindcss.com";document.head.appendChild(t);
+}
+</script>
 </head>
-<body class="bg-background font-body-md text-on-surface bg-parallax">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-sm">
-<div class="max-w-[1200px] mx-auto flex items-center justify-between px-4 h-20">
-<div class="text-xl font-black tracking-tighter text-blue-900 dark:text-white hover:scale-110 transition-transform cursor-pointer">
-                Bağcılar Teknik
-            </div>
-<div class="hidden md:flex items-center space-x-8 font-['Inter'] text-sm font-medium tracking-tight">
-<a class="text-orange-600 dark:text-orange-400 border-b-2 border-orange-600 pb-1" href="#hizmetler">Hizmetler</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors duration-200" href="#markalar">Markalar</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors duration-200" href="#bolgeler">Hizmet Bölgeleri</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors duration-200" href="#iletisim">İletişim</a>
-</div>
-<button class="bg-brand-orange text-white px-6 py-2.5 rounded-lg font-label-sm hover:opacity-90 active:opacity-80 transition-all shadow-md animate-pulse-btn">
-                Servis Çağır
-            </button>
-</div>
-</nav>
-<!-- Hero Section -->
-<header class="relative pt-40 pb-20 overflow-hidden bg-surface-container-lowest">
-<div class="max-w-[1200px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="z-10 animate-slide-in-left">
-<span class="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full text-label-sm mb-4">
-                    7/24 Teknik Destek &amp; Onarım
-                </span>
-<h1 class="font-h1 text-h1 text-brand-blue mb-6">
-                    Bağcılar Beyaz Eşya Servisi
-                </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">
-                    Uzman kadromuz ve orijinal yedek parça garantimiz ile evinizdeki tüm beyaz eşyalar için hızlı ve güvenilir servis çözümleri sunuyoruz.
-                </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-brand-orange text-white px-8 py-4 rounded-xl font-label-sm shadow-lg hover:shadow-xl transition-all flex items-center gap-2 animate-pulse-btn">
-<span class="material-symbols-outlined" data-icon="call">call</span>
-                        Servis Çağır
-                    </button>
-<button class="border-2 border-brand-blue text-brand-blue px-8 py-4 rounded-xl font-label-sm hover:bg-brand-blue hover:text-white transition-all flex items-center gap-2">
-<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
-                        WhatsApp Destek
-                    </button>
-</div>
-</div>
-<div class="relative animate-slide-in-right">
-<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-container rounded-full blur-3xl opacity-30 animate-pulse"></div>
-<img alt="Professional Technician" class="relative z-10 rounded-3xl shadow-2xl w-full h-[500px] object-cover animate-float" data-alt="Professional appliance technician in blue uniform holding a tablet while standing in front of a modern washing machine in a bright laundry room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCibEvvt55YbsNmW4GDETyUSXlQuGopeQE2OPpjWejbx8jvonVAsvUT6KeSgPsKOWukLtAY4l46TRNT3_V1RvAwCWaZvhCskqNrpJy265BP6Kbax_YLV-Dd1cXKAxXwtR13TSLWvEyNwzixDQl1YNmh5ZMqjaFwa6JHblwwrKLHr7EX2tvTBrrarVfNW2h4XOYYQI24a9Wv1aWD3UNyMk8_xYBubEbRlgAwhE2LY46JP1tJantaOzYJrkw9w5DpOE1pimRvUtsHjU0"/>
-</div>
-</div>
-</header>
-<!-- Services Section -->
-<section class="py-24 bg-background" id="hizmetler">
-<div class="max-w-[1200px] mx-auto px-4">
-<div class="text-center mb-16 reveal-on-scroll">
-<h2 class="font-h2 text-h2 text-brand-blue mb-4">Hizmetlerimiz</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Tüm büyük ev aletleriniz için Bağcılar'ın her mahallesinde yerinde teknik servis hizmeti sağlıyoruz.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Washing Machine -->
-<div class="service-hover glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group reveal-on-scroll" style="animation-delay: 0.1s">
-<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-6 icon-animate transition-transform">
-<span class="material-symbols-outlined text-4xl text-brand-blue" data-icon="local_laundry_service">local_laundry_service</span>
-</div>
-<h3 class="font-h3 text-h3 mb-3">Çamaşır Makinesi</h3>
-<p class="text-on-surface-variant mb-6">Yıkama, gürültü ve su boşaltma problemleriniz için profesyonel çözümler.</p>
-<a class="text-brand-orange font-label-sm flex items-center gap-2 hover:underline" href="#">Detaylar <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
-</div>
-<!-- Refrigerator -->
-<div class="service-hover glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group reveal-on-scroll" style="animation-delay: 0.2s">
-<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-6 icon-animate transition-transform">
-<span class="material-symbols-outlined text-4xl text-brand-blue" data-icon="kitchen">kitchen</span>
-</div>
-<h3 class="font-h3 text-h3 mb-3">Buzdolabı</h3>
-<p class="text-on-surface-variant mb-6">Soğutma sorunları, kompresör tamiri ve gaz dolumu işlemleri uzman ekiplerimizce yapılır.</p>
-<a class="text-brand-orange font-label-sm flex items-center gap-2 hover:underline" href="#">Detaylar <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
-</div>
-<!-- Dishwasher -->
-<div class="service-hover glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group reveal-on-scroll" style="animation-delay: 0.3s">
-<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-6 icon-animate transition-transform">
-<span class="material-symbols-outlined text-4xl text-brand-blue" data-icon="countertops">countertops</span>
-</div>
-<h3 class="font-h3 text-h3 mb-3">Bulaşık Makinesi</h3>
-<p class="text-on-surface-variant mb-6">Temiz yıkama ve kurutma problemleri için en hızlı parça değişim desteği.</p>
-<a class="text-brand-orange font-label-sm flex items-center gap-2 hover:underline" href="#">Detaylar <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
-</div>
-<!-- Oven -->
-<div class="service-hover glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group reveal-on-scroll" style="animation-delay: 0.4s">
-<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-6 icon-animate transition-transform">
-<span class="material-symbols-outlined text-4xl text-brand-blue" data-icon="cooking">cooking</span>
-</div>
-<h3 class="font-h3 text-h3 mb-3">Fırın &amp; Ocak</h3>
-<p class="text-on-surface-variant mb-6">Isınma sorunları ve rezistans değişimleri için güvenli teknik müdahale.</p>
-<a class="text-brand-orange font-label-sm flex items-center gap-2 hover:underline" href="#">Detaylar <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
-</div>
-<!-- AC -->
-<div class="service-hover glass-card p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group reveal-on-scroll" style="animation-delay: 0.5s">
-<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-6 icon-animate transition-transform">
-<span class="material-symbols-outlined text-4xl text-brand-blue" data-icon="ac_unit">ac_unit</span>
-</div>
-<h3 class="font-h3 text-h3 mb-3">Klima Servisi</h3>
-<p class="text-on-surface-variant mb-6">Periyodik bakım, filtre temizliği ve montaj hizmetleri.</p>
-<a class="text-brand-orange font-label-sm flex items-center gap-2 hover:underline" href="#">Detaylar <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
-</div>
-<!-- Express Service -->
-<div class="service-hover bg-brand-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all group text-white reveal-on-scroll" style="animation-delay: 0.6s">
-<div class="w-16 h-16 bg-brand-orange rounded-xl flex items-center justify-center mb-6 icon-animate transition-transform">
-<span class="material-symbols-outlined text-4xl text-white" data-icon="bolt">bolt</span>
-</div>
-<h3 class="font-h3 text-h3 mb-3">Ekspres Servis</h3>
-<p class="text-secondary-fixed mb-6">Acil durumlar için Bağcılar içinde 60 dakikada kapınızdayız.</p>
-<a class="text-brand-orange font-label-sm flex items-center gap-2 hover:underline" href="#">Hemen Ara <span class="material-symbols-outlined text-sm" data-icon="call">call</span></a>
-</div>
-</div>
-</div>
-</section>
-<!-- Brands Grid -->
-<section class="py-16 bg-surface-container-low border-y border-surface-container-high overflow-hidden" id="markalar">
-<div class="max-w-[1200px] mx-auto px-4">
-<h2 class="text-center font-label-sm text-outline uppercase tracking-widest mb-12 reveal-on-scroll">Hizmet Verdiğimiz Markalar</h2>
-<div class="grid grid-cols-2 md:grid-cols-5 gap-12 items-center reveal-on-scroll">
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">Arçelik</div>
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">Beko</div>
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">Bosch</div>
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">Siemens</div>
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">Samsung</div>
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">LG</div>
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">Profilo</div>
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">Vestel</div>
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">Regal</div>
-<div class="text-center font-bold text-2xl text-slate-400 brand-logo">Altus</div>
-</div>
-</div>
-</section>
-<!-- Service Areas -->
-<section class="py-24 bg-background" id="bolgeler">
-<div class="max-w-[1200px] mx-auto px-4">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 reveal-on-scroll">
-<div>
-<h2 class="font-h2 text-h2 text-brand-blue mb-4">Hizmet Bölgelerimiz</h2>
-<p class="text-on-surface-variant">Bağcılar'ın tüm mahallelerine gün içi teknik servis aracımız mevcuttur.</p>
-</div>
-<div class="bg-secondary-container px-4 py-2 rounded-lg flex items-center gap-2 text-on-secondary-container font-label-sm animate-bounce">
-<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
-                    İstanbul / Bağcılar
+    <body>
+        <!-- React root (hidden, kept for emergent infra) -->
+        <div id="root"></div>
+
+        <!-- Top contact bar -->
+        <div class="topbar d-none d-md-block">
+            <div
+                class="container d-flex justify-content-between align-items-center"
+            >
+                <div>
+                    <i class="bi bi-geo-alt-fill me-1"></i>
+                    Barbaros Mh. 187. Sk. No:8, Bağcılar / İstanbul
                 </div>
-</div>
-<div class="flex flex-wrap gap-3 reveal-on-scroll">
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300">Hürriyet</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 50ms">Fevzi Çakmak</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 100ms">Göztepe</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 150ms">Güneşli</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 200ms">Kemalpaşa</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 250ms">Kirazlı</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 300ms">Yenigün</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 350ms">Yıldıztepe</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 400ms">Demirkapı</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 450ms">Yavuz Selim</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 500ms">İnönü</span>
-<span class="area-tag px-6 py-3 bg-white border border-slate-200 rounded-full text-body-md cursor-default transition-all duration-300" style="transition-delay: 550ms">Fatih</span>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="py-24 bg-surface-container-lowest" id="iletisim">
-<div class="max-w-[1200px] mx-auto px-4">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-<div class="reveal-on-scroll">
-<h2 class="font-h2 text-h2 text-brand-blue mb-8">İletişime Geçin</h2>
-<div class="space-y-8">
-<div class="flex items-start gap-6 group">
-<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-orange transition-colors">
-<span class="material-symbols-outlined text-brand-blue group-hover:text-white transition-colors" data-icon="location_on">location_on</span>
-</div>
-<div>
-<h4 class="font-bold text-lg mb-1">Adres</h4>
-<p class="text-on-surface-variant">Güneşli Mahallesi, Fevzi Çakmak Caddesi No:45, Bağcılar / İstanbul</p>
-</div>
-</div>
-<div class="flex items-start gap-6 group">
-<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-orange transition-colors">
-<span class="material-symbols-outlined text-brand-blue group-hover:text-white transition-colors" data-icon="call">call</span>
-</div>
-<div>
-<h4 class="font-bold text-lg mb-1">Telefon</h4>
-<p class="text-on-surface-variant">0212 555 44 33</p>
-</div>
-</div>
-<div class="flex items-start gap-6 group">
-<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-orange transition-colors">
-<span class="material-symbols-outlined text-brand-blue group-hover:text-white transition-colors" data-icon="mail">mail</span>
-</div>
-<div>
-<h4 class="font-bold text-lg mb-1">E-posta</h4>
-<p class="text-on-surface-variant">destek@bagcilarteknik.com</p>
-</div>
-</div>
-</div>
-<div class="mt-12 rounded-2xl overflow-hidden shadow-lg border border-slate-200 h-64 hover:scale-105 transition-transform duration-500">
-<img alt="Map Location" class="w-full h-full object-cover" data-alt="A clean top-down map visual showing urban street grid with a highlighted blue marker for central office location" data-location="Bağcılar, İstanbul" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJAjJjpcaSl4pd75pVb3L9_H7R3cUV_6T4rGrMt-MyxloLusKbbuwa2vc3NeB3IUKPlHu5aLvIMftSqLyW6Q3YXnyTR6UqpW-GvwBoJnWD-85ex1uRFKbCWHNabX-xU-8lZC85inkxZSOdC8vBCSLL2ulxwyCCNWwmTKW-fmDoHbudx6-Te8agyQ-y9-PqTgt7ZHazVa4n_O85aWexPBflAB1DEjqY8SqlDPgPDPxhq8v22rJjq26MvlnaxINe_0_v-EaR5lH1HgQ"/>
-</div>
-</div>
-<div class="glass-card p-10 rounded-3xl shadow-xl reveal-on-scroll" style="animation-delay: 0.3s">
-<h3 class="font-h3 text-h3 mb-6">Servis Talep Formu</h3>
-<form class="space-y-6">
-<div>
-<label class="block font-label-sm mb-2 text-on-surface-variant">Adınız Soyadınız</label>
-<input class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none" placeholder="Örn: Ahmet Yılmaz" type="text"/>
-</div>
-<div>
-<label class="block font-label-sm mb-2 text-on-surface-variant">Telefon Numaranız</label>
-<input class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none" placeholder="05XX XXX XX XX" type="tel"/>
-</div>
-<div>
-<label class="block font-label-sm mb-2 text-on-surface-variant">Mesajınız &amp; Arıza Detayı</label>
-<textarea class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none" placeholder="Cihazınızdaki sorunu kısaca anlatınız..." rows="4"></textarea>
-</div>
-<button class="w-full bg-brand-orange text-white py-4 rounded-xl font-label-sm shadow-lg hover:opacity-90 transition-all animate-pulse-btn" type="submit">
-                            Talep Gönder
-                        </button>
-</form>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 w-full py-12">
-<div class="max-w-[1200px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-<div>
-<div class="text-lg font-bold text-blue-900 dark:text-white mb-4">Bağcılar Teknik</div>
-<p class="text-slate-500 dark:text-slate-400 font-['Inter'] text-sm leading-relaxed max-w-xs">
-                    20 yılı aşkın tecrübemizle Bağcılar bölgesinde beyaz eşya teknik servis hizmeti sunan öncü firmayız.
-                </p>
-</div>
-<div class="flex flex-col gap-3">
-<h5 class="font-bold text-blue-900 dark:text-white">Hızlı Menü</h5>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 text-sm transition-all hover:pl-2" href="#">Gizlilik Politikası</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 text-sm transition-all hover:pl-2" href="#">Kullanım Şartları</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 text-sm transition-all hover:pl-2" href="#">Sıkça Sorulan Sorular</a>
-</div>
-<div class="flex flex-col gap-3">
-<h5 class="font-bold text-blue-900 dark:text-white">İletişim Bilgileri</h5>
-<p class="text-slate-500 dark:text-slate-400 text-sm">Çağrı Merkezi: 0212 555 44 33</p>
-<p class="text-slate-500 dark:text-slate-400 text-sm">WhatsApp: 0555 123 45 67</p>
-<div class="mt-4 flex gap-4">
-<div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center hover:bg-brand-blue hover:text-white transition-all transform hover:rotate-12 cursor-pointer"><span class="material-symbols-outlined text-sm" data-icon="share">share</span></div>
-<div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center hover:bg-brand-blue hover:text-white transition-all transform hover:-rotate-12 cursor-pointer"><span class="material-symbols-outlined text-sm" data-icon="thumb_up">thumb_up</span></div>
-</div>
-</div>
-</div>
-<div class="max-w-[1200px] mx-auto px-4 mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
-            © 2024 Bağcılar Teknik Beyaz Eşya Servisi. Tüm hakları saklıdır.
+                <div class="d-flex align-items-center gap-3">
+                    <span><i class="bi bi-clock-fill me-1"></i> 7/24 Hızlı Servis</span>
+                    <a
+                        href="tel:+905302157944"
+                        data-testid="topbar-phone-1"
+                    >
+                        <i class="bi bi-telephone-fill me-1"></i>
+                        0530 215 7944
+                    </a>
+                    <a
+                        href="tel:+905454033008"
+                        data-testid="topbar-phone-2"
+                    >
+                        <i class="bi bi-telephone-fill me-1"></i>
+                        0545 403 3008
+                    </a>
+                </div>
+            </div>
         </div>
-</footer>
-<!-- Mobile Sticky Contact Bar -->
-<div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-100 flex p-3 gap-3 z-[100] shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
-<button class="flex-1 bg-brand-orange text-white py-3 rounded-xl font-label-sm flex items-center justify-center gap-2 animate-pulse">
-<span class="material-symbols-outlined" data-icon="call">call</span>
-            Hemen Ara
-        </button>
-<button class="w-14 h-14 bg-green-500 text-white rounded-xl flex items-center justify-center animate-bounce">
-<span class="material-symbols-outlined" data-icon="chat">chat</span>
-</button>
-</div>
-</body></html>
+
+        <!-- Site header -->
+        <header class="site-header">
+            <div class="container py-2">
+                <div
+                    class="d-flex align-items-center justify-content-between"
+                >
+                    <a
+                        href="#hero"
+                        class="d-flex align-items-center gap-2"
+                        data-testid="header-logo"
+                    >
+                        <span class="brand-mark">
+                            <i class="bi bi-tools"></i>
+                        </span>
+                        <span>
+                            <span class="d-block brand-title"
+                                >Bağcılar Beyaz Eşya Servisi</span
+                            >
+                            <span class="brand-sub"
+                                >Garantili • Aynı Gün Yerinde Servis</span
+                            >
+                        </span>
+                    </a>
+
+                    <nav class="d-none d-lg-flex align-items-center gap-1">
+                        <a href="#hizmetler" class="nav-link-custom">Hizmetler</a>
+                        <a href="#markalar" class="nav-link-custom">Markalar</a>
+                        <a href="#bolgeler" class="nav-link-custom">Bölgeler</a>
+                        <a href="#neden-biz" class="nav-link-custom">Neden Biz?</a>
+                        <a href="#iletisim" class="nav-link-custom">İletişim</a>
+                    </nav>
+
+                    <a
+                        href="tel:+905302157944"
+                        class="btn btn-cta d-none d-md-inline-flex align-items-center gap-2"
+                        data-testid="header-call-cta"
+                    >
+                        <i class="bi bi-telephone-fill"></i>
+                        Hemen Ara: 0530 215 7944
+                    </a>
+
+                    <a
+                        href="tel:+905302157944"
+                        class="btn btn-cta d-md-none"
+                        data-testid="header-call-cta-mobile"
+                    >
+                        <i class="bi bi-telephone-fill"></i>
+                        Ara
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section id="hero" class="hero" data-testid="hero-section">
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <span class="badge-pill">
+                            <i class="bi bi-shield-check"></i>
+                            1 Yıl Parça & İşçilik Garantili
+                        </span>
+                        <h1 data-testid="hero-title">
+                            Bağcılar Beyaz Eşya Tamir Servisi —
+                            <span style="color: #ffb347;"
+                                >7/24 Hızlı ve Garantili Çözümler</span
+                            >
+                        </h1>
+                        <p class="lead" data-testid="hero-subtitle">
+                            Arçelik, Beko, Bosch, Siemens, Samsung, LG ve tüm
+                            lider markaların beyaz eşya sorunlarına Bağcılar'da
+                            <strong>aynı gün yerinde servis</strong> desteği!
+                            Hemen arayın, cihazınızı çalışır durumda teslim
+                            edelim.
+                        </p>
+                        <div
+                            class="d-flex flex-wrap gap-3 mt-4"
+                        >
+                            <a
+                                href="tel:+905302157944"
+                                class="btn btn-cta d-inline-flex align-items-center gap-2"
+                                data-testid="hero-call-cta"
+                            >
+                                <i class="bi bi-telephone-fill"></i>
+                                Hemen Servis Çağır: 0530 215 7944
+                            </a>
+                            <a
+                                href="https://wa.me/905302157944?text=Merhaba%2C%20Ba%C4%9Fc%C4%B1lar%27dan%20beyaz%20e%C5%9Fya%20servisi%20talep%20etmek%20istiyorum."
+                                target="_blank"
+                                rel="noopener"
+                                class="btn btn-whatsapp d-inline-flex align-items-center gap-2"
+                                data-testid="hero-whatsapp-cta"
+                            >
+                                <i class="bi bi-whatsapp"></i>
+                                WhatsApp'tan Yaz
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <strong>10+</strong>
+                                <span>Yıl Tecrübe</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>%100</strong>
+                                <span>Orijinal Parça</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>1 Yıl</strong>
+                                <span>Garanti</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>Aynı Gün</strong>
+                                <span>Yerinde Servis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="hero-card" data-testid="hero-info-card">
+                            <h3 class="h5 fw-bold mb-3">
+                                <i class="bi bi-stars me-2 text-warning"></i>
+                                Neden Bizi Tercih Etmelisiniz?
+                            </h3>
+                            <ul class="list-unstyled m-0">
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill tick me-2"></i>
+                                    Bağcılar'ın tüm mahallelerinde aynı gün servis
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill tick me-2"></i>
+                                    Şeffaf fiyat — keşif önce, onay sonra işlem
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill tick me-2"></i>
+                                    Garantili işçilik ve orijinal yedek parça
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill tick me-2"></i>
+                                    Uzman teknik servis ekibi, güleryüzlü hizmet
+                                </li>
+                                <li class="mb-0">
+                                    <i class="bi bi-check-circle-fill tick me-2"></i>
+                                    Hafta sonu ve resmi tatillerde de açığız
+                                </li>
+                            </ul>
+                            <hr class="border-light opacity-25 my-3" />
+                            <a
+                                href="tel:+905454033008"
+                                class="btn btn-outline-light-blue w-100 d-inline-flex align-items-center justify-content-center gap-2"
+                                data-testid="hero-card-second-phone"
+                            >
+                                <i class="bi bi-telephone-fill"></i>
+                                Yedek Hat: 0545 403 3008
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="hizmetler" class="section" data-testid="services-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="eyebrow">Hizmetlerimiz</span>
+                    <h2 class="section-title">
+                        Tüm Beyaz Eşya Markaları İçin Profesyonel Tamir
+                    </h2>
+                    <p class="section-sub mx-auto">
+                        Bağcılar ve çevresinde 10 yılı aşkın deneyimimizle her
+                        marka ve modelde beyaz eşya arızalarını çözüyoruz.
+                        Cihazınız ne olursa olsun, çözüm bir telefon kadar
+                        yakın.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="svc-card" data-testid="service-washing-machine">
+                            <span class="svc-icon"
+                                ><i class="bi bi-droplet-half"></i
+                            ></span>
+                            <h3>Çamaşır Makinesi Tamiri</h3>
+                            <p>
+                                Sıkma yapmıyor, su akıtıyor, ses yapıyor, su
+                                almıyor ya da programdan çıkmıyor mu? Tüm marka
+                                çamaşır makinelerinde pompa, kayış, rezistans
+                                ve elektronik kart arızalarına yerinde çözüm.
+                            </p>
+                            <a
+                                href="tel:+905302157944"
+                                class="call-link"
+                                data-testid="svc-call-1"
+                            >
+                                <i class="bi bi-telephone-fill me-1"></i> Hemen
+                                Ara
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="svc-card" data-testid="service-refrigerator">
+                            <span class="svc-icon"
+                                ><i class="bi bi-snow"></i
+                            ></span>
+                            <h3>Buzdolabı Servisi</h3>
+                            <p>
+                                Soğutmuyor, motor sürekli çalışıyor, ses
+                                yapıyor veya su akıtıyorsa Bağcılar buzdolabı
+                                servisimiz hemen kapınızda. Gaz dolumu,
+                                termostat, kompresör ve fan motoru tamirinde
+                                uzmanız.
+                            </p>
+                            <a
+                                href="tel:+905302157944"
+                                class="call-link"
+                                data-testid="svc-call-2"
+                            >
+                                <i class="bi bi-telephone-fill me-1"></i> Hemen
+                                Ara
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="svc-card" data-testid="service-dishwasher">
+                            <span class="svc-icon"
+                                ><i class="bi bi-cup-hot"></i
+                            ></span>
+                            <h3>Bulaşık Makinesi Onarımı</h3>
+                            <p>
+                                Temiz yıkamıyor, su boşaltmıyor, hata kodu
+                                veriyor ya da kurutma yapmıyor mu? Bulaşık
+                                makinesi pompa, sensör ve elektronik kart
+                                arızalarına aynı gün çözüm sunuyoruz.
+                            </p>
+                            <a
+                                href="tel:+905302157944"
+                                class="call-link"
+                                data-testid="svc-call-3"
+                            >
+                                <i class="bi bi-telephone-fill me-1"></i> Hemen
+                                Ara
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="svc-card" data-testid="service-oven">
+                            <span class="svc-icon"
+                                ><i class="bi bi-fire"></i
+                            ></span>
+                            <h3>Fırın & Ocak Tamiri</h3>
+                            <p>
+                                Fırınınız ısıtmıyor, ocağınız ateş almıyor veya
+                                gaz kaçırıyor mu? Ankastre ve solo fırın, gazlı
+                                & elektrikli ocaklarda rezistans, termostat ve
+                                gaz vanası değişiminde güvenli işçilik.
+                            </p>
+                            <a
+                                href="tel:+905302157944"
+                                class="call-link"
+                                data-testid="svc-call-4"
+                            >
+                                <i class="bi bi-telephone-fill me-1"></i> Hemen
+                                Ara
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="svc-card" data-testid="service-combi-klima">
+                            <span class="svc-icon"
+                                ><i class="bi bi-thermometer-sun"></i
+                            ></span>
+                            <h3>Kombi & Klima Servisi</h3>
+                            <p>
+                                Kombi bakımı, klima montajı, gaz dolumu ve
+                                arıza çözümleri Bağcılar genelinde uygun
+                                fiyatla. Yıllık periyodik bakımlarda da
+                                yanınızdayız; cihazınızın ömrünü uzatın.
+                            </p>
+                            <a
+                                href="tel:+905302157944"
+                                class="call-link"
+                                data-testid="svc-call-5"
+                            >
+                                <i class="bi bi-telephone-fill me-1"></i> Hemen
+                                Ara
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="svc-card" data-testid="service-other">
+                            <span class="svc-icon"
+                                ><i class="bi bi-wrench-adjustable"></i
+                            ></span>
+                            <h3>Diğer Beyaz Eşyalar</h3>
+                            <p>
+                                Davlumbaz, mikrodalga, kurutma makinesi,
+                                derin dondurucu ve ankastre cihazlar dahil her
+                                türlü beyaz eşya arızanız için tek adres.
+                                Cihaz markanız ne olursa olsun bizi arayın.
+                            </p>
+                            <a
+                                href="tel:+905302157944"
+                                class="call-link"
+                                data-testid="svc-call-6"
+                            >
+                                <i class="bi bi-telephone-fill me-1"></i> Hemen
+                                Ara
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands -->
+        <section
+            id="markalar"
+            class="section"
+            style="background: var(--soft);"
+            data-testid="brands-section"
+        >
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="eyebrow">Servis Verdiğimiz Markalar</span>
+                    <h2 class="section-title">
+                        Tüm Lider Markalarda Yetkin Teknik Servis
+                    </h2>
+                    <p class="section-sub mx-auto">
+                        Bağcılar Arçelik tamircisinden Beko, Bosch ve Siemens
+                        servisine kadar — tüm büyük markaların beyaz eşyaları
+                        için orijinal parça ve uzman işçilik.
+                    </p>
+                </div>
+
+                <div class="row g-3" data-testid="brands-grid">
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">Arçelik<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">Beko<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">Bosch<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">Siemens<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">Samsung<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">LG<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">Profilo<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">Vestel<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">Regal<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                    <div class="col-6 col-md-3 col-lg-2"><div class="brand-card">Altus<span class="tick"><i class="bi bi-check2"></i> Yetkin Servis</span></div></div>
+                </div>
+
+                <p class="text-center text-muted small mt-4 mb-0">
+                    * Bağımsız teknik servistir. Tüm marka isimleri sahiplerine
+                    aittir; üretici firmalarla resmi yetkili servis ilişkimiz
+                    yoktur.
+                </p>
+            </div>
+        </section>
+
+        <!-- Regions -->
+        <section id="bolgeler" class="section region-section" data-testid="regions-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="eyebrow">Hizmet Bölgelerimiz</span>
+                    <h2 class="section-title">
+                        Bağcılar'ın Tüm Mahallelerinde Aynı Gün Servis
+                    </h2>
+                    <p class="section-sub mx-auto">
+                        Bağcılar Hürriyet'ten Güneşli'ye, Kirazlı'dan Fatih'e
+                        kadar — beyaz eşya servisi talebinizi en kısa sürede
+                        karşılıyoruz.
+                    </p>
+                </div>
+
+                <div class="row g-3" data-testid="regions-grid">
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Hürriyet Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Fevzi Çakmak Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Göztepe Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Güneşli Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Kemalpaşa Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Kirazlı Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Yenigün Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Yıldıztepe Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Demirkapı Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Yavuz Selim Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> İnönü Mh.</div></div>
+                    <div class="col-6 col-md-4 col-lg-3"><div class="region-chip"><i class="bi bi-geo-alt-fill"></i> Fatih Mh.</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us -->
+        <section id="neden-biz" class="section" data-testid="why-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="eyebrow">Neden Biz?</span>
+                    <h2 class="section-title">
+                        Bağcılar'da Güveninizi Hak Eden Teknik Servis
+                    </h2>
+                    <p class="section-sub mx-auto">
+                        İşimizin arkasında duruyoruz. Servis çağırırken aklınızda
+                        soru kalmaması için size dört temel sözümüz var.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-card">
+                            <span class="icon"
+                                ><i class="bi bi-patch-check-fill"></i
+                            ></span>
+                            <h3>1 Yıl Garanti</h3>
+                            <p>
+                                Yapılan tüm tamiratlarda parça ve işçilik için
+                                1 yıl yazılı garanti. İçiniz rahat olsun.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-card">
+                            <span class="icon"
+                                ><i class="bi bi-truck"></i
+                            ></span>
+                            <h3>Aynı Gün Yerinde Servis</h3>
+                            <p>
+                                Bağcılar'ın her mahallesine teknik ekibimiz
+                                aynı gün ulaşır, sorunu yerinde çözer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-card">
+                            <span class="icon"
+                                ><i class="bi bi-gear-wide-connected"></i
+                            ></span>
+                            <h3>Orijinal Yedek Parça</h3>
+                            <p>
+                                Sadece üretici onaylı, orijinal yedek parça
+                                kullanırız. Cihazınız uzun ömürlü çalışır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-card">
+                            <span class="icon"
+                                ><i class="bi bi-award-fill"></i
+                            ></span>
+                            <h3>10+ Yıllık Tecrübe</h3>
+                            <p>
+                                Sektörde 10 yılı aşkın deneyim. Her marka, her
+                                model için doğru tanı, kesin çözüm.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA banner -->
+                <div class="cta-banner mt-5" data-testid="cta-banner">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-8">
+                            <h3 class="mb-2">
+                                Beyaz eşyanız mı bozuldu? Hemen arayın,
+                                bugün halledelim.
+                            </h3>
+                            <p class="mb-0" style="opacity: 0.95;">
+                                Keşif ve ön tespit için sizden hiçbir
+                                yükümlülük almıyoruz. Onaylamadığınız hiçbir
+                                işlem yapılmaz.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <a
+                                href="tel:+905302157944"
+                                class="btn btn-cta-white d-inline-flex align-items-center gap-2"
+                                data-testid="cta-banner-call"
+                            >
+                                <i class="bi bi-telephone-fill"></i>
+                                0530 215 7944
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact + Map -->
+        <section
+            id="iletisim"
+            class="section"
+            style="background: var(--soft);"
+            data-testid="contact-section"
+        >
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="eyebrow">İletişim</span>
+                    <h2 class="section-title">Bize Ulaşın</h2>
+                    <p class="section-sub mx-auto">
+                        Telefon, WhatsApp veya merkez adresimizden bize
+                        kolayca ulaşabilirsiniz. Servis çağrınızı 7/24
+                        karşılıyoruz.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="contact-card h-100">
+                            <h3 class="h5 fw-bold mb-3">
+                                <i class="bi bi-headset me-2 text-primary"></i>
+                                İletişim Bilgileri
+                            </h3>
+
+                            <div class="contact-row">
+                                <span class="ic"
+                                    ><i class="bi bi-telephone-fill"></i
+                                ></span>
+                                <div>
+                                    <div class="label">Telefon 1</div>
+                                    <div class="value">
+                                        <a
+                                            href="tel:+905302157944"
+                                            data-testid="contact-phone-1"
+                                            >0530 215 7944</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-row">
+                                <span class="ic"
+                                    ><i class="bi bi-telephone-fill"></i
+                                ></span>
+                                <div>
+                                    <div class="label">Telefon 2</div>
+                                    <div class="value">
+                                        <a
+                                            href="tel:+905454033008"
+                                            data-testid="contact-phone-2"
+                                            >0545 403 3008</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-row">
+                                <span class="ic"
+                                    ><i class="bi bi-whatsapp"></i
+                                ></span>
+                                <div>
+                                    <div class="label">WhatsApp</div>
+                                    <div class="value">
+                                        <a
+                                            href="https://wa.me/905302157944?text=Merhaba%2C%20servis%20talep%20etmek%20istiyorum."
+                                            target="_blank"
+                                            rel="noopener"
+                                            data-testid="contact-whatsapp"
+                                            >0530 215 7944</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-row">
+                                <span class="ic"
+                                    ><i class="bi bi-geo-alt-fill"></i
+                                ></span>
+                                <div>
+                                    <div class="label">Adres</div>
+                                    <div class="value" style="font-size: 0.98rem;">
+                                        Barbaros Mahallesi 187. Sokak No: 8
+                                        Levent, Bağcılar / İstanbul
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-row">
+                                <span class="ic"
+                                    ><i class="bi bi-clock-fill"></i
+                                ></span>
+                                <div>
+                                    <div class="label">Çalışma Saatleri</div>
+                                    <div class="value" style="font-size: 0.98rem;">
+                                        Pazartesi - Pazar &nbsp;|&nbsp; 08:00 - 22:00
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a
+                                href="tel:+905302157944"
+                                class="btn btn-cta w-100 mt-3 d-inline-flex align-items-center justify-content-center gap-2"
+                                data-testid="contact-call-cta"
+                            >
+                                <i class="bi bi-telephone-fill"></i>
+                                Hemen Servis Çağır
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="map-wrap" data-testid="map-wrap">
+                            <iframe
+                                title="Bağcılar Beyaz Eşya Servisi Konum"
+                                src="https://www.google.com/maps?q=Barbaros%20Mahallesi%20187.%20Sokak%20No%3A%208%20Ba%C4%9Fc%C4%B1lar%20%C4%B0stanbul&output=embed"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer" data-testid="site-footer">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="brand-mark"
+                                ><i class="bi bi-tools"></i
+                            ></span>
+                            <span class="brand-title text-white"
+                                >Bağcılar Beyaz Eşya Servisi</span
+                            >
+                        </div>
+                        <p style="opacity: 0.85; max-width: 420px;">
+                            Bağcılar bölgesinde 10 yılı aşkın tecrübemizle tüm
+                            marka beyaz eşyalar için aynı gün yerinde teknik
+                            servis veriyoruz. Garantili, hızlı ve uygun
+                            fiyatlı çözümler için bir telefon kadar yakınız.
+                        </p>
+                        <a
+                            href="tel:+905302157944"
+                            class="btn btn-cta d-inline-flex align-items-center gap-2 mt-2"
+                            data-testid="footer-call-cta"
+                        >
+                            <i class="bi bi-telephone-fill"></i>
+                            Hemen Ara: 0530 215 7944
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <h4>Hızlı Menü</h4>
+                        <ul class="list-unstyled m-0">
+                            <li class="mb-2"><a href="#hizmetler">Hizmetlerimiz</a></li>
+                            <li class="mb-2"><a href="#markalar">Markalar</a></li>
+                            <li class="mb-2"><a href="#bolgeler">Hizmet Bölgeleri</a></li>
+                            <li class="mb-2"><a href="#neden-biz">Neden Biz?</a></li>
+                            <li class="mb-2"><a href="#iletisim">İletişim</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-6">
+                        <h4>İletişim</h4>
+                        <ul class="list-unstyled m-0">
+                            <li class="mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i>
+                                <a href="tel:+905302157944">0530 215 7944</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i>
+                                <a href="tel:+905454033008">0545 403 3008</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-whatsapp me-2"></i>
+                                <a
+                                    href="https://wa.me/905302157944"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >WhatsApp Destek</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-geo-alt-fill me-2"></i>
+                                Barbaros Mh. 187. Sk. No:8, Bağcılar/İstanbul
+                            </li>
+                            <li>
+                                <i class="bi bi-clock-fill me-2"></i>
+                                Her gün 08:00 - 22:00
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="footer-bottom d-flex flex-wrap justify-content-between gap-2"
+                >
+                    <div>
+                        © <span id="year">2025</span> Bağcılar Beyaz Eşya Teknik
+                        Servisi. Tüm hakları saklıdır.
+                    </div>
+                    <div>
+                        Bağımsız özel teknik servistir. Marka isimleri
+                        sahiplerine aittir.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating action buttons (desktop) -->
+        <div class="fab-stack" data-testid="floating-cta">
+            <a
+                href="https://wa.me/905302157944?text=Merhaba%2C%20Ba%C4%9Fc%C4%B1lar%27dan%20servis%20talep%20ediyorum."
+                target="_blank"
+                rel="noopener"
+                class="fab wa"
+                aria-label="WhatsApp"
+                data-testid="fab-whatsapp"
+            >
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a
+                href="tel:+905302157944"
+                class="fab call"
+                aria-label="Telefon"
+                data-testid="fab-call"
+            >
+                <i class="bi bi-telephone-fill"></i>
+            </a>
+        </div>
+
+        <!-- Mobile bottom CTA -->
+        <div class="mobile-cta" data-testid="mobile-cta">
+            <a href="tel:+905302157944" class="mc-call" data-testid="mobile-call">
+                <i class="bi bi-telephone-fill me-1"></i> Hemen Ara
+            </a>
+            <a
+                href="https://wa.me/905302157944?text=Merhaba%2C%20servis%20talep%20ediyorum."
+                target="_blank"
+                rel="noopener"
+                class="mc-wa"
+                data-testid="mobile-whatsapp"
+            >
+                <i class="bi bi-whatsapp me-1"></i> WhatsApp
+            </a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+        </script>
+
+        <a
+            id="emergent-badge"
+            target="_blank"
+            href="https://app.emergent.sh/?utm_source=emergent-badge"
+            style="
+                display: inline-flex !important;
+                box-sizing: border-box;
+                width: 178px;
+                height: 40px;
+                padding: 8px 12px 8px 12px;
+                align-items: center !important;
+                gap: 8px;
+                border-radius: 50px !important;
+                background: #000 !important;
+                position: fixed !important;
+                bottom: 16px;
+                left: 16px;
+                text-decoration: none;
+                font-family: -apple-system, BlinkMacSystemFont,
+                    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                    'Open Sans', 'Helvetica Neue', sans-serif !important;
+                font-size: 12px !important;
+                z-index: 9999 !important;
+            "
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M15.5702 8.13142C15.7729 8.0412 16.0007 8.18878 15.9892 8.4103C15.8374 11.3192 14.0965 14.0405 11.2531 15.3065C8.40964 16.5725 5.2224 16.0453 2.95912 14.2117C2.78676 14.072 2.82955 13.804 3.03219 13.7137L4.95677 12.8568C5.04866 12.8159 5.15446 12.823 5.24204 12.8725C6.73377 13.7153 8.59176 13.8649 10.2772 13.1145C11.9626 12.3641 13.0947 10.8833 13.4665 9.21075C13.4883 9.11256 13.5539 9.02918 13.6457 8.98827L15.5702 8.13142Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3066 4.74698L15.5067 5.19653C15.5759 5.35178 15.5061 5.53366 15.3508 5.60278L1.29992 11.8586C1.14467 11.9278 0.962794 11.8579 0.893675 11.7027L0.701732 11.2716L0.693457 11.2531C-1.10317 7.21778 0.711626 2.49007 4.74692 0.693443C8.78221 -1.10318 13.51 0.711693 15.3066 4.74698ZM2.82356 8.55367C2.63552 8.63739 2.41991 8.51617 2.40853 8.31065C2.28373 6.05724 3.53858 3.85787 5.72286 2.88536C7.90715 1.91286 10.3813 2.45199 11.9724 4.5236L2.82356 8.55367Z" fill="white"/>
+            </svg>
+            <p
+                style="
+                    color: #FFF !important;
+                    font-family: 'Inter', sans-serif !important;
+                    font-size: 13px !important;
+                    font-style: normal !important;
+                    font-weight: 600 !important;
+                    line-height: 20px !important;
+                    margin: 0 !important;
+                    white-space: nowrap !important;
+                "
+            >
+                Made with Emergent
+            </p>
+        </a>
+
+        <script>
+            !(function (t, e) {
+                var o, n, p, r;
+                e.__SV ||
+                    ((window.posthog = e),
+                    (e._i = []),
+                    (e.init = function (i, s, a) {
+                        function g(t, e) {
+                            var o = e.split(".");
+                            2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                                (t[e] = function () {
+                                    t.push(
+                                        [e].concat(
+                                            Array.prototype.slice.call(
+                                                arguments,
+                                                0,
+                                            ),
+                                        ),
+                                    );
+                                });
+                        }
+                        ((p = t.createElement("script")).type =
+                            "text/javascript"),
+                            (p.crossOrigin = "anonymous"),
+                            (p.async = !0),
+                            (p.src =
+                                s.api_host.replace(
+                                    ".i.posthog.com",
+                                    "-assets.i.posthog.com",
+                                ) + "/static/array.js"),
+                            (r =
+                                t.getElementsByTagName(
+                                    "script",
+                                )[0]).parentNode.insertBefore(p, r);
+                        var u = e;
+                        for (
+                            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                                u.people = u.people || [],
+                                u.toString = function (t) {
+                                    var e = "posthog";
+                                    return (
+                                        "posthog" !== a && (e += "." + a),
+                                        t || (e += " (stub)"),
+                                        e
+                                    );
+                                },
+                                u.people.toString = function () {
+                                    return u.toString(1) + ".people (stub)";
+                                },
+                                o =
+                                    "init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(
+                                        " ",
+                                    ),
+                                n = 0;
+                            n < o.length;
+                            n++
+                        )
+                            g(u, o[n]);
+                        e._i.push([i, s, a]);
+                    }),
+                    (e.__SV = 1));
+            })(document, window.posthog || []);
+            posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
+                api_host: "https://us.i.posthog.com",
+                person_profiles: "identified_only",
+                session_recording: {
+                    recordCrossOriginIframes: true,
+                    capturePerformance: false,
+                },
+            });
+        </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"7f7b0fd8732c4326aae4b9d58d5c514a","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
